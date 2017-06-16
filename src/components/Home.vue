@@ -1,12 +1,18 @@
 <template>
   <div>
     Home
+    {{test}}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home'
+  name: 'home',
+  computed: {
+    test () {
+      return this.$store.state.test
+    }
+  }
 }
 </script>
 
