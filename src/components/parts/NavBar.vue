@@ -1,6 +1,6 @@
 <template>
     <div class="nav">
-    <p class="nav-title">Website Name</p>    
+    <p class="nav-title">Website Name/ Logo</p>    
     <ul>
         <li><router-link class="link" v-bind:to="{path: '/'}">Home</router-link></li>
         <li><router-link class="link" v-bind:to="{path: '/about'}">About</router-link></li>
