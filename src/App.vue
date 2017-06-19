@@ -1,7 +1,7 @@
 <template>
   <div id="app">
   <nav-bar></nav-bar>
-    <router-view></router-view>
+    <router-view class="view"></router-view>
     <footer-tag></footer-tag>
   </div>
 </template>
@@ -28,5 +28,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.view {
+  flex: 1 0 auto;
 }
 </style>
