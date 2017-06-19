@@ -18,7 +18,7 @@
         $navy: #000080;
         $type: #2c3e50;
         $red: #ff2400;
-        $white: #fffff0;
+        $white: #fffafa;
 
     div,
     p {

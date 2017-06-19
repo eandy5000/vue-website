@@ -3,6 +3,7 @@
     <section>
     <h1 class="lead">This is the About Page</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam similique expedita nihil doloremque, et soluta ex quam hic alias odit maiores illum eius fugiat doloribus suscipit, omnis, labore quos pariatur.</p>
+    <action-call></action-call>
     </section>
     <section>
     <h2 class="headline">More information</h2>
@@ -12,8 +13,13 @@
 </template>
 
 <script>
+    import ActionCall from '../parts/ActionCall.vue'
+
     export default {
-      name: 'about'
+      name: 'about',
+      components: {
+        ActionCall
+      }
     }
 </script>
 
@@ -21,7 +27,7 @@
   $navy: #000080;
   $type: #2c3e50;
   $red: #ff2400;
-  $white: #fffff0;
+  $white: #fffafa;
   $gray: #cdc9c9;
 
   div {
