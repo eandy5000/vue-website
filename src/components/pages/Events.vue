@@ -1,7 +1,7 @@
 <template>
     <div>
     <section>
-    <h1 class="lead">This is the About Page</h1>
+    <h1 class="lead">Events</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam similique expedita nihil doloremque, et soluta ex quam hic alias odit maiores illum eius fugiat doloribus suscipit, omnis, labore quos pariatur.</p>
     <action-call></action-call>
     </section>
@@ -16,7 +16,7 @@
     import ActionCall from '../parts/ActionCall.vue'
 
     export default {
-      name: 'about',
+      name: 'events',
       components: {
         ActionCall
       }

@@ -3,8 +3,10 @@
     <p class="nav-title">Website Name/ Logo</p>    
     <ul>
         <li><router-link class="link" v-bind:to="{path: '/'}">Home</router-link></li>
-        <li><router-link class="link" v-bind:to="{path: '/about'}">About</router-link></li>
+        <li><router-link class="link" v-bind:to="{path: '/meet'}">Meet the Candidate</router-link></li>
         <li><router-link class="link" v-bind:to="{path: '/gallery'}">Gallery</router-link></li>
+        <li><router-link class="link" v-bind:to="{path: '/volunteer'}">Volunteer</router-link></li>
+        <li><router-link class="link" v-bind:to="{path: '/events'}">Events</router-link></li>
     </ul>
     </div>
 </template>
