@@ -11,7 +11,7 @@
 </script>
 
 <style scoped>
-    $navy: #000080;
+    $navy: #003366;
     $type: #2c3e50;
     $red: #ff2400;
     $white: #fffafa;
