@@ -2,6 +2,7 @@
   <div id="app">
   <nav-bar></nav-bar>
     <router-view class="view"></router-view>
+    <new-nav></new-nav>
     <footer-tag></footer-tag>
   </div>
 </template>
@@ -10,13 +11,15 @@
 import store from './store'
 import NavBar from './components/parts/NavBar.vue'
 import FooterTag from './components/parts/Footer.vue'
+import NewNav from './components/replacement/NewNav.vue'
 
 export default {
   name: 'app',
   store,
   components: {
     NavBar,
-    FooterTag
+    FooterTag,
+    NewNav
   }
 }
 </script>
