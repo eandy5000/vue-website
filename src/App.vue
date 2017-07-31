@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  <nav-bar></nav-bar>
+  <!-- <nav-bar></nav-bar> -->
     <router-view class="view"></router-view>
     <new-nav></new-nav>
     <footer-tag></footer-tag>
@@ -25,6 +25,13 @@ export default {
 </script>
 
 <style>
+$navy: #000080;
+$blue: #0000e6;
+$type: #2c3e50;
+$red: #ff2400;
+$white: #fffafa;
+$gray: #cdc9c9;
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,6 +41,7 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: $gray;
 }
 .view {
   flex: 1 0 auto;
