@@ -1,8 +1,19 @@
 <template>
     <div>
-<h4>Contact</h4>
-<p>Phone: 612-555-2222</p>
-<p>Email: <a href="fake@notreal.com">fake@notreal.com</a></p>
+<h4 class="contact-heading">Contact</h4>
+<ul class="footer-links">
+    <li>
+        <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScuYRWRSnGXksbg3OkSUeRbawhzTOddHEpCdKSl-I7dDxW2pg/viewform?usp=sf_link"
+        >Volunteer</a>
+    </li>     
+
+    <li>
+        <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfegzYo0NbB16yNSWXMXo6e_3aVJIWf3AmMOCOV7Rvh7bPRpg/viewform?usp=sf_link"
+        >Send us a message!</a>
+    </li>
+</ul>   
     </div>
 </template>
 
@@ -11,10 +22,12 @@
 </script>
 
 <style scoped>
-    $navy: #003366;
-    $type: #2c3e50;
-    $red: #ff2400;
-    $white: #fffafa;
+$navy: #000080;
+$blue: #0000e6;
+$type: #2c3e50;
+$red: #ff2400;
+$white: #fffafa;
+$gray: #f3f2f2;
 
     div {
         text-align: center;
@@ -23,5 +36,16 @@
     }
     a {
         color: $white;
-    }    
+    } 
+    .contact-heading {
+        margin-top: 1em;
+    }
+    .bottom {
+
+    }   
+    ul.footer-links {
+        list-style: none;
+        margin: 0 0 2em 0;
+        padding: 0;
+    }
 </style>

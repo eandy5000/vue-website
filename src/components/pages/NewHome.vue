@@ -21,7 +21,7 @@
             <div class="row">
                 
                 <div class="col-xs-11">
-                    <div class="card">
+                    <div class="card home-card">
                         <div class="card-block">
                             <h2>Proven Leadership You Can Trust</h2>
                             <h5 class="home-text">From Sheriff Starry:</h5>
@@ -29,7 +29,7 @@
                             <p class="home-text">My wife Jeanice, and I live and work in Stillwater; the birthplace of Minnesota. We are very proud to have raised two wonderful daughters. I have had the privilege to volunteer as a softball coach with many teams over the years.</p>
                             <p class="home-text">Early on in life, I had a mentor who was a police officer in the town where I grew up. He would come to our neighborhoods, step outside of his police car, play football with the children and visit with the families. He took the time to get know the people he protected and served. His is the example of community engagement that I have followed through my career at the Washington County Sheriff’s Office. I believe that effective communication and sound decision making are keys to building relationships. Sheriff Hutton was a strong believer of this and I will continue this serving as your Sheriff.</p>
                             <p class="home-text">My experiences over the past 10 years as Chief Deputy of Washington County Sheriff’s Office, has afforded me the opportunity to become a proven leader; a leader with the firsthand knowledge and ability to build strong relationships with our community partners and state leaders. My experience has also provided me with the perspective on innovation and technology needed to bring the Washington County Sheriff’s Office into the future for the benefit of the citizens we serve. Initiatives which target cybercrime criminals, human trafficking organizations and gaining control over the opioid overdose epidemic all inspire me to continue to dedicate my career to working collaboratively with our community partners, in an effort to respond and aid all persons who may be experiencing mental health crises.</p>
-                            <p class="home-text">I have always lived by the motto “Do the right thing”. I will continue to do the right thing serving as your Sheriff, with honor, integrity and pride.</p>
+                            <p class="home-text">I have always lived by the motto <span class="navvy">“Do the right thing”.</span> I will continue to do the right thing serving as your Sheriff, with honor, integrity and pride.</p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ $blue: #0000e6;
 $type: #2c3e50;
 $red: #ff2400;
 $white: #fffafa;
-$gray: #cdc9c9;
+$gray: #f3f2f2;
 
     .sign {
         text-align: left;
@@ -82,17 +82,22 @@ $gray: #cdc9c9;
         color: $blue;
         /* -webkit-text-stroke: 2px $white; */
     }
+    .navvy {
+        color: $navy;
+        font-weight: bold;
+        /* -webkit-text-stroke: 2px $white; */
+    }
     .home-text {
         text-align: left;
     }
     p.home-text {
-        text-indent: 1em;
+        text-indent: 1.5em;
     }
     h5.home-text {
         margin-top: 2em;
     }
     .home-card {
-
+        margin: 2em 0;
     }
 
 </style>

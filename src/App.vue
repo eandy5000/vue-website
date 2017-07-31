@@ -2,7 +2,7 @@
   <div id="app">
   <!-- <nav-bar></nav-bar> -->
     <router-view class="view"></router-view>
-    <new-nav></new-nav>
+    <!-- <new-nav></new-nav> -->
     <footer-tag></footer-tag>
   </div>
 </template>
@@ -30,7 +30,7 @@ $blue: #0000e6;
 $type: #2c3e50;
 $red: #ff2400;
 $white: #fffafa;
-$gray: #cdc9c9;
+$gray: #f3f2f2;
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
