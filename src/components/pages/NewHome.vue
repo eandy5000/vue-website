@@ -7,14 +7,14 @@
         <!-- <img :src="bigImage" alt="">
         </img> -->
         <div class="row">
-            <div class="col-sm-2 sign">
-                <h1 class="lead sign-post">
+            <div class="col-sm-5 sign">
+                <h1 class="sign-post">
                     <span class="reddy">Starry</span> <br>
                     for <br> 
                     <span class="bluey">Sheriff</span>
                 </h1>
             </div>
-            <div class="col-sm-10"></div>
+            <div class="col-sm-7"></div>
         </div>
         </b-jumbotron>
         <div class="container home-row">
@@ -67,9 +67,12 @@ $gray: #f3f2f2;
 
     .sign {
         text-align: left;
-        padding: 2em 20em 10em 2em;
         color: $white;
-        background-color: rgba(0, 0, 0, 0.3);
+        padding-right: 300px;
+        padding-bottom: 200px;
+        padding-top: 50px;
+        padding-left: 50px;
+        background-color: rgba(0, 0, 0, 0.3); 
     }
     .sign-post {
         font-size: 5em;
