@@ -3,6 +3,7 @@
         <b-jumbotron 
             class="jumbo"
             :style="styles"
+            title="Dan Starry for Sheriff campaign event"
         >
         <!-- <img :src="bigImage" alt="">
         </img> -->
@@ -42,7 +43,7 @@
 </template>
 
 <script>
-    import bigImage from '../../assets/aftonparade1.jpg'
+    import bigImage from '../../assets/dan-starry-for-sheriff-campaign-event.jpg'
     export default {
       name: 'newHome',
       data () {
