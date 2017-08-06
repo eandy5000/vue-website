@@ -8,7 +8,7 @@
     <input type="hidden" name="cmd" value="_s-xclick">
     <input type="hidden" name="hosted_button_id" value="J8VSDT9ZF666Q">
 
-    <input type="submit" value="Donate" >
+    <input type="submit" value="Donate   " >
 
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
@@ -79,13 +79,13 @@ input[type=submit] {
   color: $white;
   border: none;
   font-weight: bold;
-  padding: .3em 5em .3em .7em;
+  padding: .3em 15em .3em .7em;
 }
 
 #donate-button {
   position: fixed;
   top: 55%;
-  right: -7%;
+  right: -18%;
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear;
   transition: all .3s linear;
@@ -95,12 +95,12 @@ input[type=submit] {
   position: fixed;
   text-decoration: none;
   top: calc(55% + 40px);
-  right: -8.5%;
+  right: -18%;
   background-color: $red;
   color: $white;
   border: none;
   font-weight: bold;
-  padding: .3em 5em .3em .7em;
+  padding: .3em 15em .3em .7em;
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear;
   transition: all .3s linear;
@@ -108,12 +108,16 @@ input[type=submit] {
 
 #donate-button:hover,
 #donate-button:active {
-  right: -4%
+  right: -16%
 }
 
 #volunteer-button:hover,
 #volunteer-button:active {
-  right: -4%
+  right: -16%
+}
+
+a:hover {
+  color: $white;
 }
 
 </style>
