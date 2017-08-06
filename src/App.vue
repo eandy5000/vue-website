@@ -2,20 +2,24 @@
   <div id="app">
   <!-- <nav-bar></nav-bar> -->
     <router-view class="view"></router-view>
-    <div class="buttons">
 
-<form id="donate-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="J8VSDT9ZF666Q">
+  <div id="donate-button">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="J8VSDT9ZF666Q">
 
-<input type="submit" value="Donate" >
+    <input type="submit" value="Donate" >
 
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </div>
 
-</form>
+  <a 
+    id="volunteer-button"
+    href="https://docs.google.com/forms/d/e/1FAIpQLScuYRWRSnGXksbg3OkSUeRbawhzTOddHEpCdKSl-I7dDxW2pg/viewform?usp=sf_link"
+  >Volunteer</a>
 
 
-    </div>
     <!-- <new-nav></new-nav> -->
     <footer-tag></footer-tag>
   </div>
@@ -69,19 +73,6 @@ $gray: #f3f2f2;
 .view {
   flex: 1 0 auto;
 }
-.buttons {
-  position: fixed;
-    top: 80%;
-    right: -5%;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  transition: all .3s linear;
-}
-.buttons:hover,
-.buttons:active {
-  top: 80%;
-  right: -3%;
-}
 
 input[type=submit] {
   background-color: $navy;
@@ -90,4 +81,39 @@ input[type=submit] {
   font-weight: bold;
   padding: .3em 5em .3em .7em;
 }
+
+#donate-button {
+  position: fixed;
+  top: 55%;
+  right: -7%;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+#volunteer-button {
+  position: fixed;
+  text-decoration: none;
+  top: calc(55% + 40px);
+  right: -8.5%;
+  background-color: $red;
+  color: $white;
+  border: none;
+  font-weight: bold;
+  padding: .3em 5em .3em .7em;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+#donate-button:hover,
+#donate-button:active {
+  right: -4%
+}
+
+#volunteer-button:hover,
+#volunteer-button:active {
+  right: -4%
+}
+
 </style>
