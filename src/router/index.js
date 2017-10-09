@@ -5,7 +5,7 @@ import Meet from '../components/pages/Meet.vue'
 import Gallery from '../components/pages/Gallery.vue'
 import Events from '../components/pages/Events.vue'
 import Volunteer from '../components/pages/Volunteer.vue'
-import NewHome from '../components/pages/NewHome.vue'
+import LogoHome from '../components/pages/LogoHome.vue'
 
 Vue.use(Router)
 
@@ -13,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'NewHome',
-      component: NewHome
+      name: 'LogoHome',
+      component: LogoHome
     }
     // ,{
     //   path: '/meet',
