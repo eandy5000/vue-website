@@ -8,6 +8,7 @@ import 'normalize.css'
 import './styles/main.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
+import './styles/foundation-icons.css'
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false

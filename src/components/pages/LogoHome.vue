@@ -3,7 +3,7 @@
         <b-jumbotron 
             class="jumbo"
             :style="styles"
-            title="Dan Starry for Sheriff campaign event"
+            title="Dan Starry for Sheriff, running for Washington County Sheriff"
             fluid
         >
 
@@ -16,6 +16,10 @@
                         <div class="card-block">
                             <h2>Proven Leadership You Can Trust</h2>
                             <h5 class="home-text">From Sheriff Starry:</h5>
+                            <img 
+                                :src="danImg" 
+                                title="Dan Starry for Sheriff, Proven Leadership You Can Trust"
+                            />
                             <p class="home-text">Working for Washington County Sheriff’s Office for the past 24 years has truly been an honor. I am very thankful to be serving the citizens who live, work and play in Washington County, alongside the great men and women who protect and serve this great county each day.</p>
                             <p class="home-text">My wife Jeanice, and I live and work in Stillwater; the birthplace of Minnesota. We are very proud to have raised two wonderful daughters. I have had the privilege to volunteer as a softball coach with many teams over the years.</p>
                             <p class="home-text">Early on in life, I had a mentor who was a police officer in the town where I grew up. He would come to our neighborhoods, step outside of his police car, play football with the children and visit with the families. He took the time to get know the people he protected and served. His is the example of community engagement that I have followed through my career at the Washington County Sheriff’s Office. I believe that effective communication and sound decision making are keys to building relationships. Sheriff Hutton was a strong believer of this and I will continue this serving as your Sheriff.</p>
@@ -34,11 +38,13 @@
 
 <script>
     import bigImage from '../../assets/starrylogo.png'
+    import danImg from '../../assets/Dan2photo0817.jpg'
     export default {
       name: 'newHome',
       data () {
           return {
               bigImage,
+              danImg,
               styles: {
                   color: 'blue',
                   background: `url(${bigImage}) no-repeat center`,
@@ -58,6 +64,11 @@ $red: #ff2400;
 $white: #fffafa;
 $gray: #f3f2f2;
 
+    img {
+        max-width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
     .sign {
         text-align: left;
         color: $white;
