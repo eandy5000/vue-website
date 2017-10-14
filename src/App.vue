@@ -54,7 +54,7 @@ export default {
 $navy: #000080;
 $blue: #0000e6;
 $type: #2c3e50;
-$red: #ff2400;
+$red: #c00900;
 $white: #fffafa;
 $gray: #f3f2f2;
 
@@ -75,7 +75,7 @@ $gray: #f3f2f2;
 }
 
 input[type=submit] {
-  background-color: $navy;
+  background-color: $red;
   color: $white;
   border: none;
   font-weight: bold;

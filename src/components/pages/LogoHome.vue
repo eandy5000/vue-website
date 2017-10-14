@@ -49,7 +49,7 @@
                   color: 'blue',
                   background: `url(${bigImage}) no-repeat center`,
                   backgroundSize: 'auto',
-                  backgroundColor: '#0f263f'
+                  backgroundColor: ''
               }
           }
       }
@@ -57,7 +57,7 @@
 </script>
 
 <style>
-$navy: #000080;
+$navy: #0f263f;
 $blue: #0000e6;
 $type: #2c3e50;
 $red: #ff2400;
