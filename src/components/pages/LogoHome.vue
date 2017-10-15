@@ -18,7 +18,7 @@
                             <h5 class="home-text">From Sheriff Starry:</h5>
                             <img 
                                 :src="danImg" 
-                                title="Dan Starry for Sheriff, Proven Leadership You Can Trust"
+                                title="Dan Starry for Sheriff, Proven Leadership You Can Trust, running for Washington County Sheriff"
                             />
                             <p class="home-text">Working for Washington County Sheriff’s Office for the past 24 years has truly been an honor. I am very thankful to be serving the citizens who live, work and play in Washington County, alongside the great men and women who protect and serve this great county each day.</p>
                             <p class="home-text">My wife Jeanice, and I live and work in Stillwater; the birthplace of Minnesota. We are very proud to have raised two wonderful daughters. I have had the privilege to volunteer as a softball coach with many teams over the years.</p>
@@ -49,7 +49,7 @@
                   color: 'blue',
                   background: `url(${bigImage}) no-repeat center`,
                   backgroundSize: 'auto',
-                  backgroundColor: ''
+                  backgroundColor: '#0f263f'
               }
           }
       }

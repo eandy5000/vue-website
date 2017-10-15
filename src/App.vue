@@ -1,5 +1,23 @@
 <template>
   <div id="app">
+<!--test nav-->
+<div>
+<b-nav>
+    <b-nav-item>
+      <router-link to="/">Home</router-link>
+    </b-nav-item>
+        <b-nav-item>
+      <router-link to="/gallery">Gallery</router-link>
+    </b-nav-item>
+    <b-nav-item>
+      <router-link to="/">Bio</router-link>
+    </b-nav-item>
+
+  </b-nav-item-dropdown>
+</b-nav>
+</div>
+
+
   <!-- <nav-bar></nav-bar> -->
     <router-view class="view"></router-view>
 
@@ -100,7 +118,7 @@ input[type=submit] {
   color: $white;
   border: none;
   font-weight: bold;
-  padding: .3em 15em .3em .7em;
+  padding: .3em 14.6em .3em .7em;
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear;
   transition: all .3s linear;
@@ -118,6 +136,10 @@ input[type=submit] {
 
 a:hover {
   color: $white;
+}
+
+b-nav {
+  color: black
 }
 
 </style>

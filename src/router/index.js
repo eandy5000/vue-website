@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/pages/Home'
 import Meet from '../components/pages/Meet.vue'
-import Gallery from '../components/pages/Gallery.vue'
+import NewGallery from '../components/pages/NewGallery.vue'
 import Events from '../components/pages/Events.vue'
 import Volunteer from '../components/pages/Volunteer.vue'
 import LogoHome from '../components/pages/LogoHome.vue'
@@ -15,17 +15,12 @@ export default new Router({
       path: '/',
       name: 'LogoHome',
       component: LogoHome
+    },
+    {
+      path: '/gallery',
+      name: 'Gallery',
+      component: NewGallery
     }
-    // ,{
-    //   path: '/meet',
-    //   name: 'Meet',
-    //   component: Meet
-    // },
-    // {
-    //   path: '/gallery',
-    //   name: 'Gallery',
-    //   component: Gallery
-    // },
     // {
     //   path: '/volunteer',
     //   name: 'Volunteer',

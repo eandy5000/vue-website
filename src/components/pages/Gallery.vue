@@ -1,6 +1,5 @@
 <template>
     <div>
-    <action-call></action-call>
     <carousel-3d>
         <slide :index="0">
             <img :src="test1" alt="">
@@ -8,11 +7,7 @@
         <slide :index="1">
             <img :src="test2" alt="">        
         </slide>
-        <slide :index="2">
-            <div>
-            <img :src="test3" alt="">
-            </div>
-        </slide>
+
         <slide :index="3">
             <img :src="test2" alt="">        
         </slide>
@@ -28,14 +23,12 @@
     import test1 from '../../assets/test1.jpeg'
     import test2 from '../../assets/test2.jpeg'
     import test3 from '../../assets/test3.jpeg'
-    import ActionCall from '../parts/ActionCall.vue'
 
     export default {
       name: 'Gallery',
       components: {
         Carousel3d,
-        Slide,
-        ActionCall
+        Slide
       },
       data () {
         return {
