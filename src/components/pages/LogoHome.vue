@@ -1,13 +1,13 @@
 <template>
     <div>
-        <b-jumbotron 
+        <!-- <b-jumbotron 
             class="jumbo"
             :style="styles"
             title="Dan Starry for Sheriff, running for Washington County Sheriff"
             fluid
         >
 
-        </b-jumbotron>
+        </b-jumbotron> -->
         <div class="container home-row">
             <div class="row">
                 
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-    import bigImage from '../../assets/starrylogo.png'
+    import bigImage from '../../assets/newLogo.png'
     import danImg from '../../assets/Dan2photo0817.jpg'
     export default {
       name: 'newHome',

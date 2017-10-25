@@ -1,17 +1,16 @@
 <template>
   <div id="app">
 <!--test nav-->
+
 <div>
 <b-nav>
     <b-nav-item>
-      <router-link to="/">Home</router-link>
+      <router-link to="/" class="linker">Home</router-link>
     </b-nav-item>
         <b-nav-item>
-      <router-link to="/gallery">Gallery</router-link>
+      <router-link to="/bio">Biography</router-link>
     </b-nav-item>
-    <b-nav-item>
-      <router-link to="/">Bio</router-link>
-    </b-nav-item>
+
 
   </b-nav-item-dropdown>
 </b-nav>
@@ -19,6 +18,8 @@
 
 
   <!-- <nav-bar></nav-bar> -->
+    <header-logo></header-logo>
+
     <router-view class="view"></router-view>
 
   <div id="donate-button">
@@ -47,6 +48,7 @@
 import store from './store'
 import NavBar from './components/parts/NavBar.vue'
 import FooterTag from './components/parts/Footer.vue'
+import HeaderLogo from './components/pages/HeaderLogo.vue'
 import NewNav from './components/replacement/NewNav.vue'
 import donate from './assets/button_donate.gif'
 import vol from './assets/button_volunteer.gif'
@@ -58,6 +60,7 @@ export default {
     NavBar,
     FooterTag,
     NewNav,
+    HeaderLogo
   },
   data() {
     return {
@@ -135,7 +138,7 @@ input[type=submit] {
 }
 
 a:hover {
-  color: $white;
+  color: #aaa;
 }
 
 b-nav {
