@@ -5,10 +5,10 @@ import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
 import 'normalize.css'
-import './styles/main.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
 import './styles/foundation-icons.css'
+import './styles/main.css'
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false

@@ -8,6 +8,7 @@
                             <h2>Sheriff Starry</h2>
                             <h5 class="home-text">Dan's Story</h5>
                             <img 
+                                class="danImg"
                                 :src="danImg" 
                                 title="Dan Starry for Sheriff, Proven Leadership You Can Trust, running for Washington County Sheriff"
                             />
@@ -44,7 +45,7 @@ $red: #ff2400;
 $white: #fffafa;
 $gray: #f3f2f2;
 
-    img {
+    .danImg {
         max-width: 40%;
         float: left;
         margin-right: 1em;

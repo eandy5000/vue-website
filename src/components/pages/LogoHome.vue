@@ -56,7 +56,7 @@
     }
 </script>
 
-<style>
+<style scoped>
 $navy: #0f263f;
 $blue: #0000e6;
 $type: #2c3e50;

@@ -7,9 +7,14 @@
     <b-nav-item>
       <router-link to="/" class="linker">Home</router-link>
     </b-nav-item>
-        <b-nav-item>
+
+    <b-nav-item>
       <router-link to="/bio">Biography</router-link>
     </b-nav-item>
+
+     <b-nav-item>
+      <router-link to="/gal">Gallery</router-link>
+    </b-nav-item>   
 
 
   </b-nav-item-dropdown>
@@ -106,7 +111,7 @@ input[type=submit] {
 #donate-button {
   position: fixed;
   top: 55%;
-  right: -18%;
+  right: -18.5%;
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear;
   transition: all .3s linear;
@@ -144,5 +149,10 @@ a:hover {
 b-nav {
   color: black
 }
+
+  .jumbo {
+    min-height: 480px;
+    margin-bottom: 0;
+  }
 
 </style>
