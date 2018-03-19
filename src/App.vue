@@ -15,6 +15,9 @@
      <b-nav-item>
       <router-link to="/gal">Gallery</router-link>
     </b-nav-item>   
+     <b-nav-item>
+      <router-link to="/events">Events</router-link>
+    </b-nav-item>   
 
 
   </b-nav-item-dropdown>
@@ -50,16 +53,16 @@
 </template>
 
 <script>
-import store from './store'
-import NavBar from './components/parts/NavBar.vue'
-import FooterTag from './components/parts/Footer.vue'
-import HeaderLogo from './components/pages/HeaderLogo.vue'
-import NewNav from './components/replacement/NewNav.vue'
-import donate from './assets/button_donate.gif'
-import vol from './assets/button_volunteer.gif'
+import store from "./store";
+import NavBar from "./components/parts/NavBar.vue";
+import FooterTag from "./components/parts/Footer.vue";
+import HeaderLogo from "./components/pages/HeaderLogo.vue";
+import NewNav from "./components/replacement/NewNav.vue";
+import donate from "./assets/button_donate.gif";
+import vol from "./assets/button_volunteer.gif";
 
 export default {
-  name: 'app',
+  name: "app",
   store,
   components: {
     NavBar,
@@ -71,9 +74,9 @@ export default {
     return {
       donate,
       vol
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
@@ -85,7 +88,7 @@ $white: #fffafa;
 $gray: #f3f2f2;
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -100,21 +103,21 @@ $gray: #f3f2f2;
   flex: 1 0 auto;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: $red;
   color: $white;
   border: none;
   font-weight: bold;
-  padding: .3em 15em .3em .7em;
+  padding: 0.3em 15em 0.3em 0.7em;
 }
 
 #donate-button {
   position: fixed;
   top: 55%;
   right: -18.5%;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 #volunteer-button {
@@ -126,20 +129,20 @@ input[type=submit] {
   color: $white;
   border: none;
   font-weight: bold;
-  padding: .3em 14.6em .3em .7em;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  transition: all .3s linear;
+  padding: 0.3em 14.6em 0.3em 0.7em;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 #donate-button:hover,
 #donate-button:active {
-  right: -16%
+  right: -16%;
 }
 
 #volunteer-button:hover,
 #volunteer-button:active {
-  right: -16%
+  right: -16%;
 }
 
 a:hover {
@@ -147,12 +150,11 @@ a:hover {
 }
 
 b-nav {
-  color: black
+  color: black;
 }
 
-  .jumbo {
-    min-height: 480px;
-    margin-bottom: 0;
-  }
-
+.jumbo {
+  min-height: 480px;
+  margin-bottom: 0;
+}
 </style>

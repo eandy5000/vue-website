@@ -27,17 +27,12 @@ export default new Router({
       path: "/gal",
       name: "Gallery",
       component: NewGallery
+    },
+    {
+      path: "/events",
+      name: "Events",
+      component: Events
     }
-    // {
-    //   path: '/volunteer',
-    //   name: 'Volunteer',
-    //   component: Volunteer
-    // },
-    // {
-    //   path: "/events",
-    //   name: "Events",
-    //   component: Events
-    // }
     // {
     //   path: '/test',
     //   name: 'NewHome',

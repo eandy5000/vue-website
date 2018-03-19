@@ -1,20 +1,25 @@
 <template>
-    <div>
     <section>
-    <h1 class="lead">Events</h1>
-    <p><span> {{foo}} </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam similique expedita nihil doloremque, et soluta ex quam hic alias odit maiores illum eius fugiat doloribus suscipit, omnis, labore quos pariatur.</p>
-    <action-call></action-call>
+      <div v-for="event in events"class="card cardStyles">
+        <div class="card-header cardHeaderStyles">
+        {{event.type}} {{event.date}}
+        </div>
+        <div class="card-body">
+        <h5 class="card-title titleStyles">{{event.location}}</h5>
+        <p class="card-text">{{event.description}}</p>
+        <p class="card-text"><strong>Address:</strong> {{event.address}}</p>
+        <p class="card-text"><strong>Time:</strong> {{event.time}}</p>
+        <a :href="event.map" class="btn btn-primary directions-btn">Directions</a>
+        <p class="prepared">Prepared and Paid for by the Dan Starry Committee to Elect for Sheriff
+PO Box 481, Stillwater MN 55082</p>
+        </div>
+      </div>
     </section>
-    <section>
-    <h2 class="headline">More information</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit soluta sunt maiores vero. In nobis earum reiciendis rerum. Perspiciatis voluptatibus, perferendis modi pariatur veritatis consequatur ullam labore corporis. Fugit, placeat.</p>
-    </section>
-    </div>
 </template>
 
 <script>
 import ActionCall from "../parts/ActionCall.vue";
-import foo from "../../assets/data/events-data.js";
+import eventData from "../../assets/data/events-data.js";
 
 export default {
   name: "events",
@@ -24,28 +29,50 @@ export default {
   data() {
     return {
       test1: "Hi there",
-      foo: foo.test
+      events: eventData.events
     };
   }
 };
 </script>
 
 <style scoped>
-$navy: #003366;
+$navy: #0f263f;
+$blue: #0000e6;
 $type: #2c3e50;
-$red: #ff2400;
+$red: #c00900;
 $white: #fffafa;
-$gray: #cdc9c9;
-
-div {
-  background-color: $white;
-}
+$gray: #f3f2f2;
 
 section {
-  border: 0.1em solid $type;
-  border-radius: 0.3em;
   background-color: $gray;
   margin: 1em;
+}
+
+.cardStyles {
+  max-width: 90%;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.cardHeaderStyles {
+  font-weight: bold;
+  color: $white;
+  background-color: $navy;
+}
+
+.directions-btn {
+  margin: 1em 0;
+  background-color: $red;
+  border: none;
+  font-weight: bold;
+}
+
+.titleStyles {
+  margin-top: 1em;
+}
+
+.prepared {
+  font-size: 12px;
 }
 
 .lead {
